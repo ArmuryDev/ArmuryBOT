@@ -56,6 +56,10 @@ exports.run = async (bot, msg) => {
             {
                 name: ':video_game: Game',
                 value: (game.name) ? `*${activityTypes[game.type]}* ${game.name} ${game.streaming ? `[(Streaming)](${game.url})` : ''}` : 'none'
+            },
+           {
+                name: 'Développé par Armury',
+                value: (game.name) ? `*${activityTypes[game.type]}* ${game.name} ${game.streaming ? `[(Streaming)](${game.url})` : ''}` : 'none'
             }
         ], { inline: true })
     })).delete(30000);
